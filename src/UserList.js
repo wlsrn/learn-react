@@ -29,13 +29,11 @@ function UserList() {
 
   return (
     <div>
-      {users.map(user, index) => (
-        <User user={user} key={index}/>
+      {users.map(user => (
+        <User user={user} key={user.id} />
       ))}
     </div>
   );
 }
-//git ez
-//git ez 2
-//123
+
 export default UserList;

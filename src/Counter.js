@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 
+function reducer(state, action) {
+  
+}
+
 function Counter() {
   const [number, setNumber] = useState(0);
 
   const onIncrease = () => {
-    setNumber(prevNumber => number + 1);
+    setNumber(prevNumber => prevNumber + 1);
   }
 
   const onDecrease = () => {
-    setNumber(prevNumber => number - 1);
+    setNumber(prevNumber => prevNumber - 1);
   }
 
   return (
